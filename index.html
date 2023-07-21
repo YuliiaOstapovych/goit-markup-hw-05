@@ -567,9 +567,23 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <p class="footer-form-title">Subscribe</p>
+          <form class="footer-form">
+            <label aria-label="">
+              <input type="email" name="footer-email" class="footer-email" placeholder="E-mail">
+            </label>
+            <div class="footer-form-icon">
+              <button type="submit" class="footer-form-button">Subscribe</button>
+                <svg class="footer-input-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-frame"></use>
+                </svg>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
@@ -608,10 +622,18 @@
               </svg>
             </div>
           </div>
-          <div class="modal-field">
+          <div class="modal-field-textarea">
             <label for="user-text" class="input-label">Comment
             </label>
             <textarea name="user-text" id="user-text" class="modal-textarea" placeholder="Text input"></textarea>
+          </div>
+          <div class="modal-field-check">
+            <input type="checkbox" name="user-terms" id="user-terms" class="modal-check visually-hidden">
+            <label for="user-terms" class="form-check-text"><span class="form-check-icon">
+              <svg class="form-check-text-icon" width="10" height="10">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>I accept the terms and conditions of the&#160;<a href="" class="form-privacy-link">Privacy Policy</a></label>
           </div>
           <button type="submit" class="modal-form-button">Send</button>
         </form>
