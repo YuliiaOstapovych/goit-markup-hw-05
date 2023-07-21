@@ -468,7 +468,7 @@ rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
 
@@ -489,13 +489,14 @@ rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
   border-radius: 4px;
   border: 1px solid var(--white);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  background: var(--navyblue);
   padding-left: 16px;
   color: var(--white);
   font-size: 12px;
   font-weight: 400;
-  line-height: 2; 
-  letter-spacing: 0.02em;
+  line-height: 1.5; 
+  letter-spacing: 0.04em;
+  background-color: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .footer-email::placeholder {
@@ -507,35 +508,27 @@ rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
 }
 
 .footer-form-button {
-    display: flex;
-    justify-content: left;
-    padding-left: 24px;
-    align-items: center;
-    min-width: 165px;
-    height: 40px;
-    border-radius: 4px;
-    background: var(--iris-color);
-    color: var(--white);
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    cursor: pointer;
-    border: none;
-    outline: transparent;   
-}
-
-.footer-form-icon {
   display: flex;
-  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-width: 165px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: var(--iris-color);
+  color: var(--white);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: none;
+  outline: transparent;
+  padding: 8px 24px;   
 }
 
 .footer-input-icon {
-  position: absolute;
-  right: 24px;
-  top: 8px;
-  bottom: 8px;
+  margin-left: 16px;
   fill: var(--white);
 }
 
@@ -727,7 +720,7 @@ rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5; 
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
   color: var(--navyblue);
   text-align: center;
   margin-bottom: 16px;
@@ -738,14 +731,13 @@ rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
   width: 100%;
   height: 40px;
   background-color: transparent;
-  color: var(--lightslate, #8E8F99);
+  color: var(--lightslate);
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.2;
-  letter-spacing: 0,03em;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   outline: transparent;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   padding-left: 38px;
 }
 
@@ -791,16 +783,14 @@ rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
   width: 100%;
   height: 120px;
   background-color: transparent;
-  color: var(--lightslate);
+  color: var(--navyblue-modal);
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   outline: transparent;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-  padding-left: 16px;
-  padding-top: 8px;
+  padding: 8px 16px;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -828,19 +818,24 @@ rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
 .modal-form-button {
   border-radius: 4px;
   background: var(--iris-color);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: var(--white, #FFF);
   text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
   cursor: pointer;
   padding: 16px 32px;
   display: block;
   margin: 0 auto;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-button:is(:hover, :focus) {
+  background-color: var(--ocean);
 }
 
 .modal-field-check {
@@ -850,8 +845,8 @@ rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
   color: var(--lightslate);
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   display: flex;
   align-content: center;
 }
@@ -866,7 +861,7 @@ rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
 }
 
 .form-check-text span {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 16px;
@@ -875,14 +870,14 @@ rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
   border: 1px solid var(--navyblue-modal);
   margin-right: 8px;
   fill: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 } 
 
 
 .modal-check:checked +.form-check-text span {
   background-color: var(--ocean);
   border: none;
-  fill: var(--white);
+  fill: var(--cloud);
 }
 
 .modal-check:focus +.form-check-text span {
