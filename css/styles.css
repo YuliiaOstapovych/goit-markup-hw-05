@@ -840,6 +840,7 @@ rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
 
 .modal-field-check {
   margin-bottom: 24px;
+  display: inline-flex;
 }
 .form-check-text {
   color: var(--lightslate);
@@ -848,6 +849,8 @@ rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
   line-height: 1.17;
   letter-spacing: 0.04em;
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-privacy-link {
@@ -870,7 +873,6 @@ rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
   margin-right: 8px;
   fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
 
@@ -880,9 +882,7 @@ rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
   fill: var(--cloud);
 }
 
-.modal-check:focus +.form-check-text > .form-check-span {
-  border-color: var(--ocean);
-}
+
 
 
 
