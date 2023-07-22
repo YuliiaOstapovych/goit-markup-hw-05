@@ -840,7 +840,6 @@ rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
 
 .modal-field-check {
   margin-bottom: 24px;
-  display: inline-flex;
 }
 .form-check-text {
   color: var(--lightslate);
@@ -848,9 +847,6 @@ rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .form-privacy-link {
