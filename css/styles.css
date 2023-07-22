@@ -862,6 +862,9 @@ rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
   text-decoration-line: underline;
 }
 
+.modal-check  {
+  display: inline-flex;
+}
 .form-check-span {
   display: inline-flex;
   align-items: center;
